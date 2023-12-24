@@ -1,0 +1,200 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Sprites\artifact_card_battery.png" />
+    <None Remove="Sprites\artifact_dodge_dynamo.png" />
+    <None Remove="Sprites\artifact_electric_generator.png" />
+    <None Remove="Sprites\artifact_eletricstay.png" />
+    <None Remove="Sprites\artifact_lightning_drive.png" />
+    <None Remove="Sprites\artifact_stable_dispersion.png" />
+    <None Remove="Sprites\attackstall.png" />
+    <None Remove="Sprites\beamicon.png" />
+    <None Remove="Sprites\border_volt.png" />
+    <None Remove="Sprites\char_volt.png" />
+    <None Remove="Sprites\drawDiscardIcon.png" />
+    <None Remove="Sprites\energyhint.png" />
+    <None Remove="Sprites\hurtenemyicon.png" />
+    <None Remove="Sprites\icon_place_on_top.png" />
+    <None Remove="Sprites\icon_put_back_hand.png" />
+    <None Remove="Sprites\ouranos_cannon.png" />
+    <None Remove="Sprites\ouranos_cannon_artifact.png" />
+    <None Remove="Sprites\ouranos_cannon_artifact_off.png" />
+    <None Remove="Sprites\ouranos_cannon_artifact_v2.png" />
+    <None Remove="Sprites\ouranos_cannon_off.png" />
+    <None Remove="Sprites\ouranos_cannon_v2.png" />
+    <None Remove="Sprites\ouranos_cannon_v2_1.png" />
+    <None Remove="Sprites\ouranos_cannon_v2_2.png" />
+    <None Remove="Sprites\ouranos_cannon_v2_3.png" />
+    <None Remove="Sprites\ouranos_chassis.png" />
+    <None Remove="Sprites\ouranos_cockpit.png" />
+    <None Remove="Sprites\ouranos_generator.png" />
+    <None Remove="Sprites\ouranos_missile.png" />
+    <None Remove="Sprites\PlayTopCardIcon.png" />
+    <None Remove="Sprites\powerfocus.png" />
+    <None Remove="Sprites\powerfocus_cost_full.png" />
+    <None Remove="Sprites\powerfocus_cost_off.png" />
+    <None Remove="Sprites\RedoIcon.png" />
+    <None Remove="Sprites\status_railgun_beam_icon.png" />
+    <None Remove="Sprites\volt.png" />
+    <None Remove="Sprites\volt_card_default.png" />
+    <None Remove="Sprites\volt_card_reload.png" />
+    <None Remove="Sprites\volt_converter_artifact.png" />
+    <None Remove="Sprites\volt_mini.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CobaltCore">
+      <HintPath>References\CobaltCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CobaltCoreModding.Definitions">
+      <HintPath>References\CobaltCoreModding.Definitions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>References\MonoGame.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Sprites\Artifacts\artifact_card_battery.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\artifact_dodge_dynamo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\artifact_electric_generator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\artifact_eletricstay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\artifact_lightning_drive.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\artifact_stable_dispersion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\ouranos_cannon_artifact.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\ouranos_cannon_artifact_off.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\ouranos_cannon_artifact_v2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Artifacts\volt_converter_artifact.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Cards\border_volt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Cards\volt_card_default.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Cards\volt_card_reload.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Characters\char_volt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Characters\volt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Characters\volt_mini.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\FX\RailgunCharge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\attackstall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\beamChargeicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\beamicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\drawDiscardIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\energyhint.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\hurtenemyicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\icon_place_on_top.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\icon_put_back_hand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\pierceCharge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\PlayTopCardIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\powerfocus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\powerfocus_cost_full.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\powerfocus_cost_off.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\RedoIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Icons\status_railgun_beam_icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_cannon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_cannon_off.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_cannon_v2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_cannon_v2_1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_cannon_v2_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_cannon_v2_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_chassis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_cockpit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_generator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Sprites\Parts\ouranos_missile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
